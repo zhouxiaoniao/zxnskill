@@ -20,15 +20,15 @@
 
 ## 如何安装
 
-当前阶段无需命令行，直接复制文本或上传文件即可使用：
+按你使用的工具任选一种方式：
 
-### 方式一：单文件快速使用（豆包 / DeepSeek / Kimi / ChatGPT / Claude）
+### 方式一：单文件快速使用（豆包网页版 / DeepSeek / Kimi / ChatGPT / Claude）
 1. 打开仓库里的 [System_Prompt.md](System_Prompt.md)，全选复制内容。
 2. 粘贴到你常用 AI 工具的「系统提示词 / 智能体设定」中，或直接作为新对话的第一句发送。
 
-### 方式二：挂载完整知识库（扣子 Coze / Dify / GPTs / Claude Projects / SKILL）
-1. 将 `knowledge_base/` 目录下的全部 8 个 `.md` 文件导入智能体的知识库。
-2. 将 [System_Prompt.md](System_Prompt.md) 的内容填入智能体的人设 / 系统指令栏。
+### 方式二：Agent 一键识别 / 完整知识库挂载（豆包桌面端 / WorkBuddy / Claude Code / 扣子 / Dify）
+* **支持 Skills 的 Agent（如豆包桌面端、Claude Code 等）**：直接把仓库地址 `https://github.com/zhouxiaoniao/zxnskill.git` 发给它让它安装，根目录已内置标准 [SKILL.md](SKILL.md) 入口。
+* **手动挂载知识库（扣子 Coze / Dify / GPTs / Claude Projects）**：将 `knowledge_base/` 目录下的全部 8 个 `.md` 文件导入知识库，再把 [System_Prompt.md](System_Prompt.md) 填入人设/系统指令栏。
 
 ---
 
@@ -67,6 +67,7 @@
 ```text
 ├── LICENSE                            # 版权与使用许可声明
 ├── README.md                          # 使用说明
+├── SKILL.md                           # 标准 Skill 入口（供豆包等 Agent 自动识别安装）
 ├── System_Prompt.md                   # 主控提示词（复制即用）
 └── knowledge_base/                    # 底层知识库（共 8 份 .md）
     ├── 01_赚钱底层逻辑与市场法则.md
